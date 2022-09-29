@@ -184,7 +184,7 @@
 
         <div class="contact-form">
           <p>Dropping a line to say g’day, ask for my resume or see if we can build something amazing together?<br> I’d love to hear from you!</p>
-          <form id="form"  method="post" class="form">
+          <form id="form" action="mailto:magalinicole.gm@gmail.com"  method="post" class="form">
             <input type="text" placeholder="Name" name="name" required />
             <input type="email" placeholder="Email" name="email" required/>
             <textarea type="text" placeholder="Message" name="message" required>
@@ -234,9 +234,7 @@
   emailjs.init('6YI7Xl_nTL1_WSnba')
 </script>
 <script>
-  import swal from "sweetalert";
-
-  const btn = document.getElementById("button");
+const btn = document.getElementById("button");
 
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
